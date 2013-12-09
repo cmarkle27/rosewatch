@@ -8,12 +8,6 @@ var lastHash, newHash;
 nconf.env().argv();
 nconf.file(nconf.get("config"));
 
-// var schedule = require('node-schedule');
-
-// var j = schedule.scheduleJob('*/1 * * * *', function(){
-//     console.log('The answer to life, the universe, and everything!');
-// });
-
 var notifyMe = function(subject, message) {
 
   var date = new Date();
